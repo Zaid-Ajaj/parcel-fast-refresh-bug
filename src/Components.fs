@@ -7,13 +7,13 @@ let counter(initial: int) =
     let (count, setCount) = React.useState initial
     Html.div [
         Html.button [
-            prop.style [ style.backgroundColor.greenYellow; style.padding 20; style.margin 10 ]
-            prop.onClick (fun _ -> setCount(count + 5))
+            prop.style [ style.backgroundColor.greenYellow; style.padding 10; style.margin 10 ]
+            prop.onClick (fun _ -> setCount(count + 1))
             prop.text "Increment"
         ]
 
         Html.button [
-            prop.style [ style.backgroundColor.purple; style.color.white; style.padding 20 ]
+            prop.style [ style.backgroundColor.purple; style.color.white; style.padding 10 ]
             prop.onClick (fun _ -> setCount(count - 1))
             prop.text "Decrement"
         ]
@@ -24,5 +24,5 @@ let counter(initial: int) =
 [<ReactComponent>]
 let index() = Html.div [
     counter 5
-    counter 15
+    counter 20
 ]

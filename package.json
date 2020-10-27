@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "start": "dotnet fable watch src --run parcel serve ./src/index.html --open --port 8080",
+        "start": "dotnet fable watch src --run parcel ./src/index.html --open --port 8080",
         "build": "dotnet fable src --run parcel build ./src/index.html",
         "start:parcel": "parcel ./src/index.html",
         "build:parcel": "parcel build ./src/index.html"
@@ -11,7 +11,7 @@
         "react-dom": "^16.14.0"
     },
     "devDependencies": {
-        "parcel": "^2.0.0-beta.1",
+        "parcel": "2.0.0-nightly.432",
         "sass": "^1.27.0"
     }
 }
